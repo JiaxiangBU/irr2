@@ -1,5 +1,6 @@
 ---
 output: github_document
+bibliography: add.bib
 ---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
@@ -17,7 +18,7 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of irr2 is to calculate IRR and NPV.
+The goal of irr2 is to calculate IRR and NPV. The related functions inspired by @Ellis2019CBA.
 
 ## Installation
 
@@ -41,6 +42,26 @@ This is a basic example which shows you how to solve a common problem:
 ```{r example}
 library(irr2)
 ## basic example code
+```
+
+There is a stream of cash flows, down payment with 2200, and next pay back 752.97 each month.
+To calcuate the IRR per year.
+
+```{r}
+cf1 <- c(-2200, rep(752.9700, 3))
+cf1
+irr_m <- irr(cf = cf1)
+irr_m
+((irr_m/100+1)^12-1)*100
+```
+
+If the discount rate is 2%, calcuate NPV of this cash flows.
+If the discount rate is 1%, calcuate NPV of this cash flows.
+
+```{r}
+npv(discount = 2, cf = cf1)
+npv(discount = 1.33299, cf = cf1)
+npv(discount = 1, cf = cf1)
 ```
 
 
