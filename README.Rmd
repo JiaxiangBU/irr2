@@ -16,6 +16,7 @@ knitr::opts_chunk$set(
 # irr2
 
 <!-- badges: start -->
+[![DOI](https://zenodo.org/badge/224571371.svg)](https://zenodo.org/badge/latestdoi/224571371)
 <!-- badges: end -->
 
 The goal of irr2 is to calculate IRR and NPV. The related functions inspired by @Ellis2019CBA.
@@ -64,7 +65,26 @@ npv(discount = 1.33299, cf = cf1)
 npv(discount = 1, cf = cf1)
 ```
 
+## Citations
+
+```{r include=FALSE}
+citations <- add2pkg::add_zenodo_citation("README.Rmd")
+```
+
+```{r echo=FALSE, results='asis'}
+cat(citations$Cite)
+```
+
+```{r echo=FALSE, results='asis'}
+cat(paste0("```BibTex\n",citations$BibTex,"\n```"))
+```
+
+```{r echo=FALSE, results='asis'}
+cat(citations$Comments)
+```
 
 ***
 
 `r add2pkg::add_disclaimer("Jiaxiang Li")`
+
+## Reference {-}

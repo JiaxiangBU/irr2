@@ -91,7 +91,7 @@ file.edit("NEWS.md")
 use_github_release()
 rmarkdown::render("README.Rmd")
 rstudioapi::viewer("README.html")
-safely(file.remove)("README.html")
+purrr::safely(file.remove)("README.html")
 # 因为会更新 citations，但是要等一会。
 # publish release
 
@@ -120,7 +120,7 @@ file.edit("README.Rmd")
 # 需要等一段时间，有时候 doi 没有显示出来
 rmarkdown::render("README.Rmd")
 rstudioapi::viewer("README.html")
-safely(file.remove)("README.html")
+purrr::safely(file.remove)("README.html")
 
 
 # add vignette ------------------------------------------------------------
