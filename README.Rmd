@@ -65,6 +65,16 @@ npv(discount = 1.33299, cf = cf1)
 npv(discount = 1, cf = cf1)
 ```
 
+```{r}
+irr2 <- irr(c(-100, 39, 59, 55, 20))/100
+irr2
+-100 +
+    39/(1+irr2)^1 +
+    59/(1+irr2)^2 +
+    55/(1+irr2)^3 +
+    20/(1+irr2)^4
+```
+
 ## Citations
 
 ```{r include=FALSE}

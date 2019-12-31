@@ -69,6 +69,19 @@ npv(discount = 1, cf = cf1)
 #> [1] 14.47363
 ```
 
+``` r
+irr2 <- irr(c(-100, 39, 59, 55, 20))/100
+#> Warning in f(arg, ...): The unit of discount is percentage, as xx%.
+irr2
+#> [1] 0.2809484
+-100 +
+    39/(1+irr2)^1 +
+    59/(1+irr2)^2 +
+    55/(1+irr2)^3 +
+    20/(1+irr2)^4
+#> [1] -3.680089e-06
+```
+
 ## Citations
 
 Jiaxiang Li. (2019, November 28). JiaxiangBU/irr2: irr2 0.1.0 (Version
