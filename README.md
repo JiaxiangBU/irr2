@@ -117,8 +117,9 @@ content.
 <h6 align="center">
 
 Please note that the `irr2` project is released with a [Contributor Code
-of Conduct](.github/CODE_OF_CONDUCT.md).<br>By contributing to this
-project, you agree to abide by its terms.
+of
+Conduct](https://github.com/JiaxiangBU/irr2/blob/master/CODE_OF_CONDUCT.md).<br>By
+contributing to this project, you agree to abide by its terms.
 
 </h6>
 
@@ -130,7 +131,8 @@ project, you agree to abide by its terms.
 
 <h6 align="center">
 
-MIT © [Jiaxiang Li](LICENSE.md)
+MIT © [Jiaxiang
+Li](https://github.com/JiaxiangBU/irr2/blob/master/LICENSE.md)
 
 </h6>
 
